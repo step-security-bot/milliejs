@@ -15,6 +15,11 @@ jobs:
       contents: write # to be able to publish a GitHub release
       pull-requests: write # to be able to comment on released pull requests
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@128a63446a954579617e875aaab7d2978154e969 # v2.4.0
+        with:
+          egress-policy: audit
+
       - uses: google-github-actions/release-please-action@51ee8ae2605bd5ce1cfdcc5938684908f1cd9f69 # v3.7.9
         with:
           release-type: node

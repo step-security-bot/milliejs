@@ -13,3 +13,48 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: npm
+    directory: /.yarn/sdks/eslint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /.yarn/sdks/prettier
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /.yarn/sdks/typescript
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs-core
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs-jest-utils
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs-store-base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs-store-google-pubsub
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs-store-memory
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/milliejs
+    schedule:
+      interval: daily
